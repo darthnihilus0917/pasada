@@ -1,0 +1,83 @@
+body {
+    font-family: 'VT323';
+    margin: 0px;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+h1 span {
+    display: block;
+    padding-top: 8px;
+    font-size: 16px !important;
+}
+
+h2 {
+    text-align: center;
+}
+
+.jeep {
+    position: absolute;
+    bottom: 2px;
+    width: 120px;
+    height: 120px;
+    background-image: url('images/jeepney.png');
+    background-size: 120px auto;
+    background-position: center;
+    z-index: 2;
+}
+
+.passenger {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    bottom: 192px;
+    z-index: 1;
+}
+
+.obstacle {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-image: url('images/enemy-jeepney.png');
+    background-size: 120px auto;
+    background-position: center;
+    bottom: 0px;
+}
+
+.stats {
+    background-color: #000;
+    color: #fff;
+    padding: 8px;
+    font-size: 20px;
+}
+
+.stats .stat-details {
+    display: block;
+}
+
+.road {
+    display: block;
+    height: 188px;
+    position: absolute;
+    background-color: #ccc;
+    width: 100%;
+    border-top: solid 20px #222;
+    border-bottom: solid 8px #222;
+    bottom: 0px;
+    z-index: -2;
+}
+
+.road-divider {
+    display: block;
+    height: 90px;
+    position: absolute;
+    width: 50px;
+    border-top: dashed 8px #999;
+    bottom: 0px;
+    right: 0px;
+    z-index: -1;
+}
